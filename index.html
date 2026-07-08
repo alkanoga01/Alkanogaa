@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALKANOGA | Plataforma Comunitaria de Retalhuleu</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -147,6 +148,51 @@
             background-color: #0b7dda;
         }
 
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+
+        .social-icon.instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .social-icon.facebook {
+            background-color: #1877f2;
+        }
+
+        .social-icon.gmail {
+            background-color: #ea4335;
+        }
+
+        .social-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -201,11 +247,25 @@
         </div>
 
         <!-- Sección de Contacto Unificada -->
-        <section class="contact-section">
+        <section class="contact-section" id="contacto">
             <h2>¿Quieres que tu organización aparezca aquí?</h2>
             <p>Trabajamos para dar a conocer las iniciativas que transforman Retalhuleu. Escríbenos para enviarnos información de otros centros o sugerencias.</p>
             <!-- CORRECCIÓN ENLACE DE CORREO -->
-            <a href="mailto:alkanoga01@gmail.com?subject=Registro%20de%20Organizacion%20-%20ALKANOGA" class="btn-email">Contactar por Correo</a>
+            <a href="mailto:alkanoga01@gmail.com?subject=Registro%20de%20Organizacion%20-%20ALKANOGA" class="btn-email">✉️ Contactar por Correo</a>
+
+            <!-- Redes Sociales -->
+            <div class="social-links">
+                <a href="https://www.instagram.com/alkanoga_/" class="social-icon instagram" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/19DU1d8tb5/" class="social-icon facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="mailto:alkanoga01@gmail.com" class="social-icon gmail" title="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="social-text">Síguenos en nuestras redes sociales o envíanos un correo directamente</p>
         </section>
     </main>
 
