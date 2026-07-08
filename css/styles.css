@@ -8,11 +8,11 @@
 /* NUEVA PALETA DE COLORES ALKANOGA */
 :root {
     --color-verde-esperanza: #2a9d8f;    /* Verde esperanza - crecimiento y bienestar */
-    --color-naranja: #ff944d;             /* Naranja - cercanía humana y amabilidad */
+    --color-amarillo-pastel: #ffd966;    /* Amarillo pastel - cercanía humana y amabilidad */
     --color-azul: #457b9d;                /* Azul - confianza, transparencia y fiabilidad */
     --color-blanco: #ffffff;              /* Blanco - fondo limpio, claridad */
     --color-fondo-claro: #f5f5f5;        /* Gris muy claro para fondos */
-    --color-naranja-suave: #ffe6d5;      /* Naranja suave para acentos */
+    --color-amarillo-suave: #fff8e7;    /* Amarillo muy suave para acentos */
 }
 
 body {
@@ -30,7 +30,7 @@ body {
 }
 
 .text-center { text-align: center; }
-.bg-light { background-color: var(--color-naranja-suave); }
+.bg-light { background-color: var(--color-amarillo-suave); }
 
 h1, h2, h3, h4 {
     color: var(--color-verde-esperanza);
@@ -69,16 +69,17 @@ h1, h2, h3, h4 {
     box-shadow: 0 4px 12px rgba(69, 123, 157, 0.3);
 }
 
-/* Botones de tarjetas en Naranja */
+/* Botones de tarjetas en Amarillo Pastel */
 .btn-card {
-    background-color: var(--color-naranja);
-    color: var(--color-blanco);
+    background-color: var(--color-amarillo-pastel);
+    color: #333;
     font-size: 0.9rem;
+    font-weight: 600;
 }
 .btn-card:hover {
-    background-color: #ff8530;
+    background-color: #ffd147;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(255, 148, 77, 0.3);
+    box-shadow: 0 4px 12px rgba(255, 217, 102, 0.4);
 }
 
 .main-header {
@@ -105,7 +106,7 @@ h1, h2, h3, h4 {
     text-decoration: none;
     color: var(--color-verde-esperanza);
 }
-.logo span { color: var(--color-naranja); }
+.logo span { color: var(--color-amarillo-pastel); }
 
 .main-nav a {
     text-decoration: none;
@@ -116,7 +117,7 @@ h1, h2, h3, h4 {
 }
 
 .main-nav a:hover, .main-nav a.active {
-    color: var(--color-naranja);
+    color: var(--color-amarillo-pastel);
 }
 
 .hero {
@@ -147,7 +148,7 @@ h1, h2, h3, h4 {
     display: block;
     width: 60px;
     height: 4px;
-    background-color: var(--color-naranja);
+    background-color: var(--color-amarillo-pastel);
     margin: 10px auto 0 auto;
     border-radius: 2px;
 }
@@ -182,7 +183,7 @@ h1, h2, h3, h4 {
 
 /* Contorno especial decorativo para destacar */
 .card-active {
-    border-top: 4px solid var(--color-naranja);
+    border-top: 4px solid var(--color-amarillo-pastel);
 }
 
 .location-tag {
@@ -226,12 +227,12 @@ h1, h2, h3, h4 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-bottom: 4px solid var(--color-naranja);
+    border-bottom: 4px solid var(--color-amarillo-pastel);
 }
 
 .story-img-placeholder {
     font-size: 3rem;
-    background-color: var(--color-naranja-suave);
+    background-color: var(--color-amarillo-suave);
     width: 80px;
     height: 80px;
     display: flex;
@@ -270,11 +271,11 @@ h1, h2, h3, h4 {
 }
 
 .schedule-box { 
-    background: linear-gradient(135deg, var(--color-naranja-suave) 0%, rgba(255, 148, 77, 0.1) 100%);
+    background: linear-gradient(135deg, var(--color-amarillo-suave) 0%, rgba(255, 217, 102, 0.1) 100%);
     padding: 20px; 
     border-radius: 6px; 
     margin: 15px 0;
-    border: 1px solid var(--color-naranja);
+    border: 1px solid var(--color-amarillo-pastel);
     border-left: 4px solid var(--color-verde-esperanza);
 }
 .schedule-box h4 { color: var(--color-verde-esperanza); }
@@ -301,5 +302,5 @@ h1, h2, h3, h4 {
     font-size: 0.9rem; 
 }
 .main-footer p { margin-bottom: 5px; }
-.back-link { color: var(--color-naranja); text-decoration: none; font-weight: bold; }
+.back-link { color: var(--color-amarillo-pastel); text-decoration: none; font-weight: bold; }
 .back-link:hover { text-decoration: underline; }
